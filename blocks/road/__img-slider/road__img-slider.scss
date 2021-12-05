@@ -1,0 +1,14 @@
+.road__img-slider {
+  display: block;
+  grid-area: roadImgSlider;
+  position: relative;
+  margin: 120px 0 0 0;
+  max-width: 1300px;
+  z-index: 30;
+}
+
+@media screen and ( max-width: 900px ) {
+  .road__img-slider {
+    display: none;
+  }
+}

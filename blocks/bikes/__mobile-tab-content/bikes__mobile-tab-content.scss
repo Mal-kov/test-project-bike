@@ -1,0 +1,9 @@
+.bikes__mobile-tab-content {
+  display: none;
+}
+
+@media screen and ( max-width: 900px ) {
+  .bikes__mobile-tab-content {
+    display: block;
+  }
+}

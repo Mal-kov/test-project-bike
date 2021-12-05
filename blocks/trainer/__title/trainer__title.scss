@@ -1,0 +1,17 @@
+.trainer__title {
+  grid-area: trainerTitle;
+  margin: 0;
+  padding: 4px 0 0 0;
+  max-width: 320px;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and ( max-width: 700px ) {
+  .trainer__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

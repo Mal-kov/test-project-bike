@@ -1,0 +1,27 @@
+.quote {
+  padding: 60px 0 60px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and ( max-width: 1025px ) {
+  .quote {
+    padding: 60px 60px 100px
+  }
+}
+
+@media screen and ( max-width: 900px ) {
+  .quote {
+    border-bottom: 1px solid #E3E3E3;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and ( max-width: 600px ) {
+  .quote {
+    padding: 20px 18px 80px;
+  }
+}
+

@@ -1,0 +1,24 @@
+.footer__wrap {
+  padding: 82px 120px;
+}
+
+@media screen and ( max-width: 1025px ) {
+  .footer__wrap {
+    padding: 60px;
+  }
+}
+
+@media screen and ( max-width: 900px ) {
+  .footer__wrap {
+    // border-bottom: 1px solid #E3E3E3;
+    // flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and ( max-width: 600px ) {
+  .footer__wrap {
+    padding: 60px 18px 25px;
+  }
+}

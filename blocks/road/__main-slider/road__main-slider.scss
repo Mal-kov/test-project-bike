@@ -1,0 +1,9 @@
+.road__main-slider {
+  padding-bottom: 106px;
+}
+
+@media screen and ( max-width: 900px ) {
+  .road__main-slider {
+    padding-bottom: 0;
+  }
+}

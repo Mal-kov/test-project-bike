@@ -1,0 +1,30 @@
+.info__advertising {
+  grid-area: stiky;
+  position: absolute;
+  padding-top: 320px;
+  // padding-bottom: 10%;
+  margin-left: 510px;
+  height: 450px;
+}
+
+
+@media screen and ( max-width: 1025px ) {
+  .info__advertising {
+    // grid-area: stiky;
+    // position: absolute;
+    // padding-top: 320px;
+    // padding-bottom: 10%;
+    margin-left: 410px;
+    // height: 450px;
+  }
+}
+@media screen and ( max-width: 900px ) {
+  .info__advertising {
+    grid-area: stiky;
+    // position: absolute;
+    // padding-top: 320px;
+    // padding-bottom: 10%;
+    margin-left: 50px;
+    // height: 450px;
+  }
+}

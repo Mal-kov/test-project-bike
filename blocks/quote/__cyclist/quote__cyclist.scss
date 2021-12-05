@@ -1,0 +1,14 @@
+.quote__cyclist {
+  display: inline;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  opacity: .7;
+}
+
+@media screen and ( max-width: 600px ) {
+  .quote__cyclist {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}

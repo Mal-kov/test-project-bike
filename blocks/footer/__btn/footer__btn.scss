@@ -1,0 +1,17 @@
+.footer__btn {
+  display: none;
+
+  &:checked + .footer__btn-slider{
+
+    background-color: #545454;
+  }
+  &:checked + .footer__btn-slider:before{
+    // -webkit-transform: translateX(24px);
+    // -ms-transform: translateX(24px);
+    transform: translateX(20px);
+
+  }
+
+
+}
+

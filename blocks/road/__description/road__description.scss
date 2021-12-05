@@ -1,0 +1,17 @@
+.road__description {
+  grid-area: roadDesc;
+  max-width: 445px;
+  padding: 0;
+  margin: 44px 0 0 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+@media screen and ( max-width: 600px ) {
+  .road__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

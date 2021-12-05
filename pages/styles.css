@@ -1,0 +1,1279 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import "../vendor/swiper/swiper.css";
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  font-display: swap;
+  src: url(./fonts/Inter-Regular.woff2) format("woff2"), url(./fonts/Inter-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-display: swap;
+  src: url(./fonts/Inter-Bold.woff2) format("woff2"), url(./fonts/Inter-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 900;
+  font-display: swap;
+  src: url(./fonts/Inter-Black.woff2) format("woff2"), url(./fonts/Inter-Black.woff) format("woff");
+}
+.page {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+.page__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page__section {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+.page__link {
+  opacity: 1;
+}
+.page__link:hover {
+  opacity: 0.7;
+}
+
+.page__theme-lite {
+  color: #222222;
+}
+
+.page__theme-bold {
+  color: #151515;
+}
+
+.page__dark-theme {
+  background-color: #333333;
+  color: #fff;
+}
+
+.page__dark-theme_lite {
+  color: #E5E5E5;
+}
+
+.page__dark-theme_bold {
+  color: #fff;
+}
+
+.header {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.header__menu-desctop {
+  display: flex;
+  justify-content: end;
+  padding: 27px 121px;
+}
+
+.header__dectop-item {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 35px;
+}
+
+.header__menu-mobile {
+  display: none;
+}
+
+.info {
+  padding: 0 0 60px 120px;
+  display: grid;
+  grid-template-columns: 420px 1fr 610px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "infoTitle stiky infoImage" "infoDesc stiky infoImage" "infoBtn stiky infoImage" "infoBike stiky infoImage";
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1025px) {
+  .info {
+    padding-left: 60px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 900px) {
+  .info {
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    grid-template-columns: 1fr -webkit-max-content;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: repeat(4, -webkit-max-content);
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas: "infoTitle infoTitle" "stiky infoImage" "infoDesc infoDesc" "infoBtn infoBtn";
+    border-bottom: 1px solid #E3E3E3;
+  }
+}
+.info__text-block {
+  max-width: 420px;
+}
+
+.info__title {
+  grid-area: infoTitle;
+  margin: 63px 0 0 0;
+  padding: 0;
+  max-width: 320px;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+
+.info__decription {
+  grid-area: infoDesc;
+  padding: 0;
+  margin: 19px 0 0 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 420px;
+  opacity: 0.7;
+}
+
+.info__btn {
+  grid-area: infoBtn;
+  padding: 16px 25px;
+  margin: -27px 0 0 0;
+  color: #fff;
+  width: 180px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  display: block;
+  background: #24b47e;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.info__btn:hover {
+  color: #fff;
+  background-color: #319e75;
+}
+.info__btn:hover::before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .info__btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+.info__bike-advert {
+  grid-area: infoBike;
+  position: relative;
+  padding: 0;
+  margin: -16px 0 0 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+}
+.info__bike-advert::after {
+  content: "";
+  position: absolute;
+  right: 64px;
+  top: 8px;
+  width: 132px;
+  height: 2px;
+  margin-left: 50px;
+  background-color: #d7d4d4;
+}
+
+@media screen and (max-width: 900px) {
+  .info__bike-advert {
+    display: none;
+  }
+}
+.info__image-block {
+  grid-area: infoImage;
+  position: relative;
+}
+
+@media screen and (max-width: 1025px) {
+  .info__image-block {
+    overflow: hidden;
+  }
+}
+.info__main-img {
+  display: block;
+}
+
+.info__advertising {
+  grid-area: stiky;
+  position: absolute;
+  padding-top: 320px;
+  margin-left: 510px;
+  height: 450px;
+}
+
+@media screen and (max-width: 1025px) {
+  .info__advertising {
+    margin-left: 410px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .info__advertising {
+    grid-area: stiky;
+    margin-left: 50px;
+  }
+}
+.info__advertising-img {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+  top: 300px;
+  padding: 20px 50px;
+  background: #F4F4F4;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.quote {
+  padding: 60px 0 60px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1025px) {
+  .quote {
+    padding: 60px 60px 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .quote {
+    border-bottom: 1px solid #E3E3E3;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .quote {
+    padding: 20px 18px 80px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .quote__image {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .quote__image {
+    max-width: 100%;
+  }
+}
+.quote__text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 80px;
+  padding-right: 90px;
+}
+
+@media screen and (max-width: 1300px) {
+  .quote__text {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .quote__text {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .quote__text {
+    font-size: 23px;
+    line-height: 29px;
+  }
+}
+.quote__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 900px) {
+  .quote__title {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .quote__title {
+    font-size: 23px;
+    line-height: 29px;
+  }
+}
+.quote__author {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  max-width: 150px;
+}
+
+@media screen and (max-width: 900px) {
+  .quote__author {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .quote__author {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 100px;
+  }
+}
+.quote__cyclist {
+  display: inline;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+  .quote__cyclist {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+.road {
+  padding: 62px 0 60px 120px;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .road {
+    padding: 60px 30px;
+    border-bottom: 1px solid #E3E3E3;
+  }
+}
+@media screen and (max-width: 700px) {
+  .road {
+    padding: 40px 18px 80px;
+  }
+}
+.road__title {
+  grid-area: roadTitle;
+  margin: 0;
+  padding: 0;
+  max-width: 320px;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 600px) {
+  .road__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.road__description {
+  grid-area: roadDesc;
+  max-width: 445px;
+  padding: 0;
+  margin: 44px 0 0 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+  .road__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.road__main-slider {
+  padding-bottom: 106px;
+}
+
+@media screen and (max-width: 900px) {
+  .road__main-slider {
+    padding-bottom: 0;
+  }
+}
+.road__slider {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 60px 120px 450px;
+  grid-template-areas: "roadTitle" "roadDesc" "roadImgSlider";
+}
+
+@media screen and (max-width: 900px) {
+  .road__slider {
+    grid-template-rows: repeat(3, -webkit-max-content);
+    grid-template-rows: repeat(3, max-content);
+    grid-template-areas: "roadTitle" "roadMobile" "roadDesc";
+  }
+}
+.road__mobile-slider {
+  grid-area: roadMobile;
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .road__mobile-slider {
+    display: block;
+    position: relative;
+    margin: 40px auto 0;
+    max-width: 90vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 30;
+  }
+}
+@media screen and (max-width: 780px) {
+  .road__mobile-slider {
+    max-width: 100vw;
+  }
+}
+.road__img-slider {
+  display: block;
+  grid-area: roadImgSlider;
+  position: relative;
+  margin: 120px 0 0 0;
+  max-width: 1300px;
+  z-index: 30;
+}
+
+@media screen and (max-width: 900px) {
+  .road__img-slider {
+    display: none;
+  }
+}
+.road__logo {
+  position: absolute;
+  bottom: 10px;
+  left: -5px;
+  width: 101px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 35;
+}
+
+.road__highway-logo {
+  background-image: url("../images/road__highway-logo.png");
+}
+
+.road__gravel-logo {
+  background-image: url("../images/road__gravel-logo.png");
+}
+
+.road__tt-logo {
+  background-image: url("../images/road__tt-logo.png");
+}
+
+.road__pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+@media screen and (max-width: 900px) {
+  .road__pagination {
+    top: 0;
+    left: unset;
+    right: 0;
+    z-index: 30;
+  }
+}
+.road__swiper-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+.road__swiper-button:hover {
+  opacity: 0.6;
+}
+
+.road__swiper-button-next {
+  background-image: url("../images/shevron_left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.road__swiper-button-prev {
+  background-image: url("../images/shevron_right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bikes {
+  padding: 54px 120px;
+  position: relative;
+}
+
+@media screen and (max-width: 1025px) {
+  .bikes {
+    padding: 60px 60px 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .bikes {
+    border-bottom: 1px solid #E3E3E3;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bikes {
+    padding: 20px 18px 80px;
+  }
+}
+.bikes__title {
+  margin: 73px 0 0 0;
+  padding: 0;
+  max-width: 320px;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 700px) {
+  .bikes__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.bikes__mobile-nav-tabs {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .bikes__mobile-nav-tabs {
+    display: block;
+    margin-top: 40px;
+    padding: 8px 64px 8px 8px;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    background-color: #f4f4f4;
+  }
+}
+.bikes__mobile-tab-content {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .bikes__mobile-tab-content {
+    display: block;
+  }
+}
+.bikes__mobile-slider {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.bikes__mobile-tab-pane {
+  display: none;
+}
+
+.bikes__mobile-tab-pane_active {
+  display: block;
+}
+
+.bikes__nav-tabs {
+  position: absolute;
+  right: 101px;
+  top: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+  .bikes__nav-tabs {
+    display: none;
+  }
+}
+.bikes__nav-tab {
+  padding: 10px 20px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.bikes__nav-tab_active {
+  font-weight: 700;
+}
+
+.bikes__tab-content {
+  margin-top: 117px;
+}
+
+@media screen and (max-width: 900px) {
+  .bikes__tab-content {
+    display: none;
+  }
+}
+.bikes__figure {
+  margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .bikes__figure {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+  }
+}
+.bikes__slider {
+  margin-left: 0;
+}
+
+.bikes__tab-pane {
+  display: none;
+}
+
+.bikes__tab-pane_active {
+  display: block;
+}
+
+.bikes__item-link {
+  text-decoration: none;
+}
+
+.bikes__item-img {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .bikes__item-img {
+    max-width: 85%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .bikes__item-img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.bikes__item-name {
+  padding: 19px 0 0 8px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 900px) {
+  .bikes__item-name {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .bikes__item-name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.trainer {
+  padding: 155px 120px 120px;
+  display: grid;
+  grid-template-columns: 1fr -webkit-max-content;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: repeat(3, -webkit-max-content);
+  grid-template-rows: repeat(3, max-content);
+  grid-template-areas: "trainerTitle trainerImg" "trainerDesc trainerImg" "trainerLinks trainerImg";
+}
+
+@media screen and (max-width: 1025px) {
+  .trainer {
+    padding: 60px 60px 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .trainer {
+    padding: 40px 30px 60px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, -webkit-max-content);
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas: "trainerTitle" "trainerImg" "trainerDesc" "trainerLinks";
+  }
+}
+@media screen and (max-width: 600px) {
+  .trainer {
+    padding: 20px 18px 60px;
+  }
+}
+.trainer__image {
+  grid-area: trainerImg;
+}
+
+@media screen and (max-width: 1300px) {
+  .trainer__image {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .trainer__image {
+    width: 100%;
+    padding-top: 40px;
+  }
+}
+.trainer__title {
+  grid-area: trainerTitle;
+  margin: 0;
+  padding: 4px 0 0 0;
+  max-width: 320px;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 700px) {
+  .trainer__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.trainer__description {
+  grid-area: trainerDesc;
+  padding: 0;
+  margin: 43px 0 0 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+  max-width: 460px;
+}
+
+@media screen and (max-width: 700px) {
+  .trainer__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.trainer__links {
+  grid-area: trainerLinks;
+  display: flex;
+  margin-top: 182px;
+}
+
+@media screen and (max-width: 1300px) {
+  .trainer__links {
+    margin-top: 130px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .trainer__links {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .trainer__links {
+    margin-top: 40px;
+  }
+}
+.trainer__link {
+  padding: 0 31px 0 0;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 700px) {
+  .trainer__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.footer {
+  background-color: #efefef;
+}
+
+.footer__dark-theme {
+  background-color: #2f2f2f;
+}
+
+.footer__wrap {
+  padding: 82px 120px;
+}
+
+@media screen and (max-width: 1025px) {
+  .footer__wrap {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer__wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__wrap {
+    padding: 60px 18px 25px;
+  }
+}
+.footer__title {
+  padding: 0 0 50px 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 250px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 85px;
+}
+
+.footer__email {
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  background: transparent;
+  padding: 9px 0 11px 20px;
+  border-radius: 4px;
+  width: 338px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+}
+
+.footer__copyright-text {
+  padding: 12px 0 0 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #CFCFCF;
+}
+
+.footer__swicher {
+  display: flex;
+  justify-content: space-between;
+  width: 138px;
+  align-items: center;
+}
+
+.footer__switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.footer__btn-slider {
+  border-radius: 24px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  transition: 0.4s;
+}
+.footer__btn-slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  left: 2px;
+  bottom: 2px;
+  background-color: #24b47e;
+  transition: 0.4s;
+}
+
+.footer__btn {
+  display: none;
+}
+.footer__btn:checked + .footer__btn-slider {
+  background-color: #545454;
+}
+.footer__btn:checked + .footer__btn-slider:before {
+  transform: translateX(20px);
+}/*# sourceMappingURL=styles.css.map */

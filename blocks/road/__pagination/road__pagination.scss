@@ -1,0 +1,17 @@
+.road__pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+@media screen and ( max-width: 900px ) {
+  .road__pagination {
+    top: 0;
+    left: unset;
+    right: 0;
+    z-index: 30;
+  }
+}

@@ -1,0 +1,93 @@
+.info__btn {
+  grid-area: infoBtn;
+  padding: 16px 25px;
+  margin: -27px 0 0 0;
+  color: #fff;
+  width: 180px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  display: block;
+  background: $butColor;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  // border: 2px solid $butColorActive;
+
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+
+  &:hover{
+    color: #fff;
+    background-color: $butColorActive;
+    // text-shadow: nthree;
+
+  }
+  &:hover::before{
+    left: 0%;
+    right: auto;
+    width: 100%;
+
+  }
+
+}
+
+
+
+
+
+
+
+// .info__btn {
+//   grid-area: infoBtn;
+//   padding: 16px 25px;
+//   margin: -27px 0 0 0;
+//   color: #fff;
+//   background: $butColor;
+//   width: 180px;
+//   height: 50px;
+//   border-radius: 4px;
+//   font-weight: 600;
+//   font-size: 14px;
+//   line-height: 18px;
+//   letter-spacing: 1px;
+//   display: block;
+//   box-sizing: border-box;
+//   text-align: center;
+//   text-decoration: none;
+//   cursor: pointer;
+//   position: relative;
+
+//   &::before{
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 0;
+//     height: 50px;
+//     color: #fff;
+//     background: $butColorActive;
+//     border-radius: 4px;
+//     transition: all 2s ease;
+//   }
+
+//   &:hover::before{
+
+//     color: #fff;
+//     width: 100%;
+//   }
+
+// }
+
+@media screen and ( max-width: 900px ) {
+  .info__btn {
+    margin-top: 10px;
+    width: 100%;
+
+  }
+}

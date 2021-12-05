@@ -1,0 +1,17 @@
+.road {
+  padding: 62px 0 60px 120px;
+  position: relative;
+}
+
+@media screen and ( max-width: 900px ) {
+  .road {
+    padding: 60px 30px;
+    border-bottom: 1px solid #E3E3E3;
+  }
+}
+
+@media screen and ( max-width: 700px ) {
+  .road {
+    padding: 40px 18px 80px;
+  }
+}

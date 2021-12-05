@@ -1,0 +1,115 @@
+@import "../vendor/normalize";
+@import "../vendor/fonts";
+@import "../blocks/variables.scss";
+@import "../vendor/swiper/swiper.css";
+
+// page
+@import "../blocks/page/page.scss";
+@import "../blocks/page/__list/page__list.scss";
+@import "../blocks/page/__section/page__section.scss";
+@import "../blocks/page/__link/page__link.scss";
+@import "../blocks/page/page__theme-lite.scss";
+@import "../blocks/page/page__theme-bold.scss";
+@import "../blocks/page/page__dark-theme.scss";
+@import "../blocks/page/page__dark-theme_lite.scss";
+@import "../blocks/page/page__dark-theme_bold.scss";
+
+// header
+@import "../blocks/header/header.scss";
+@import "../blocks/header/__menu-desctop/header__menu-desctop.scss";
+@import "../blocks/header/__dectop-item/header__dectop-item.scss";
+@import "../blocks/header/__menu-mobile/header__menu-mobile.scss";
+@import "../blocks/header/__mobile-item/header__mobile-item.scss";
+
+
+
+// info
+@import "../blocks/info/info.scss";
+@import "../blocks/info/__text-block/info__text-block.scss";
+@import "../blocks/info/__title/info__title.scss";
+@import "../blocks/info/__decription/info__decription.scss";
+@import "../blocks/info/__btn/info__btn.scss";
+@import "../blocks/info/__bike-advert/info__bike-advert.scss";
+@import "../blocks/info/__image-block/info__image-block.scss";
+
+
+@import "../blocks/info/__main-img/info__main-img.scss";
+@import "../blocks/info/__advertising/info__advertising.scss";
+@import "../blocks/info/__advertising-img/info__advertising-img.scss";
+
+
+
+
+// quote
+@import "../blocks/quote/quote.scss";
+@import "../blocks/quote/__image/quote__image.scss";
+@import "../blocks/quote/__text/quote__text.scss";
+@import "../blocks/quote/__title/quote__title.scss";
+@import "../blocks/quote/__author/quote__author.scss";
+@import "../blocks/quote/__cyclist/quote__cyclist.scss";
+
+// road
+@import "../blocks/road/road.scss";
+@import "../blocks/road/__title/road__title.scss";
+@import "../blocks/road/__description/road__description.scss";
+@import "../blocks/road/__main-slider/road__main-slider.scss";
+@import "../blocks/road/__slider/road__slider.scss";
+@import "../blocks/road/__mobile-slider/road__mobile-slider.scss";
+@import "../blocks/road/__img-slider/road__img-slider.scss";
+@import "../blocks/road/__logo/road__logo.scss";
+@import "../blocks/road/__highway-logo/road__highway-logo.scss";
+@import "../blocks/road/__gravel-logo/road__gravel-logo.scss";
+@import "../blocks/road/__tt-logo/road__tt-logo.scss";
+@import "../blocks/road/__pagination/road__pagination.scss";
+@import "../blocks/road/__swiper-button/road__swiper-button.scss";
+@import "../blocks/road/__swiper-button-next/road__swiper-button-next.scss";
+@import "../blocks/road/__swiper-button-prev/road__swiper-button-prev.scss";
+
+
+
+// bikes
+@import "../blocks/bikes/bikes.scss";
+@import "../blocks/bikes/__title/bikes__title.scss";
+@import "../blocks/bikes/__mobile-nav-tabs/bikes__mobile-nav-tabs.scss";
+@import "../blocks/bikes/__mobile-tab-content/bikes__mobile-tab-content.scss";
+@import "../blocks/bikes/__mobile-slider/bikes__mobile-slider.scss";
+@import "../blocks/bikes/__mobile-tab-pane/bikes__mobile-tab-pane.scss";
+@import "../blocks/bikes/__mobile-tab-pane/bikes__mobile-tab-pane_active.scss";
+
+@import "../blocks/bikes/__nav-tabs/bikes__nav-tabs.scss";
+@import "../blocks/bikes/__nav-tab/bikes__nav-tab.scss";
+@import "../blocks/bikes/__nav-tab/bikes__nav-tab_active.scss";
+@import "../blocks/bikes/__tab-content/bikes__tab-content.scss";
+@import "../blocks/bikes/__figure/bikes__figure.scss";
+@import "../blocks/bikes/__slider/bikes__slider.scss";
+@import "../blocks/bikes/__tab-pane/bikes__tab-pane.scss";
+@import "../blocks/bikes/__tab-pane/bikes__tab-pane_active.scss";
+@import "../blocks/bikes/__item-link/bikes__item-link.scss";
+@import "../blocks/bikes/__item-img/bikes__item-img.scss";
+@import "../blocks/bikes/__item-name/bikes__item-name.scss";
+
+
+// trainer
+@import "../blocks/trainer/trainer.scss";
+@import "../blocks/trainer/__image/trainer__image.scss";
+@import "../blocks/trainer/__title/trainer__title.scss";
+@import "../blocks/trainer/__description/trainer__description.scss";
+@import "../blocks/trainer/__links/trainer__links.scss";
+@import "../blocks/trainer/__link/trainer__link.scss";
+
+
+
+// footer
+@import "../blocks/footer/footer.scss";
+@import "../blocks/footer/footer__dark-theme.scss";
+@import "../blocks/footer/__wrap/footer__wrap.scss";
+@import "../blocks/footer/__title/footer__title.scss";
+@import "../blocks/footer/__copyright/footer__copyright.scss";
+@import "../blocks/footer/__email/footer__email.scss";
+@import "../blocks/footer/__copyright-text/footer__copyright-text.scss";
+@import "../blocks/footer/__swicher/footer__swicher.scss";
+@import "../blocks/footer/__switch/footer__switch.scss";
+@import "../blocks/footer/__btn-slider/footer__btn-slider.scss";
+@import "../blocks/footer/__btn/footer__btn.scss";
+
+
