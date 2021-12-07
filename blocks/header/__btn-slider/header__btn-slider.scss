@@ -1,0 +1,25 @@
+.header__btn-slider {
+  border-radius: 24px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+  &::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 2px;
+    bottom: 2px;
+    background-color: $butColor;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+}

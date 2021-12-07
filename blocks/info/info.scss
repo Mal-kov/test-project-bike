@@ -1,5 +1,4 @@
 .info {
-  // padding-left: 120px;
   padding: 0 0 60px 120px;
   display: grid;
   grid-template-columns: 420px 1fr 610px;
@@ -9,28 +8,13 @@
   "infoDesc stiky infoImage"
   "infoBtn stiky infoImage"
   "infoBike stiky infoImage";
-
   box-sizing: border-box;
-
-
 }
-
 
 @media screen and ( max-width: 1025px ) {
   .info {
     padding-left: 60px;
-    // display: grid;
-    // grid-template-columns: 420px 1fr 610px;
-    // grid-template-rows: 1fr 1fr 1fr 1fr;
-    // grid-template-areas:
-    // "infoTitle stiky infoImage"
-    // "infoDesc stiky infoImage"
-    // "infoBtn stiky infoImage"
-    // "infoBike stiky infoImage";
-
     overflow: hidden;
-    // justify-content: space-between;
-
   }
 }
 
@@ -39,7 +23,6 @@
     padding-left: 30px;
     padding-right: 30px;
     position: relative;
-    // display: grid;
     grid-template-columns: 1fr max-content;
     grid-template-rows: repeat(4, max-content);
     grid-template-areas:
@@ -47,10 +30,18 @@
     "stiky infoImage"
     "infoDesc infoDesc"
     "infoBtn infoBtn";
-
-    // overflow: hidden;
-    // justify-content: space-between;
     border-bottom: 1px solid #E3E3E3;
+  }
+}
 
+@media screen and ( max-width: 800px ) {
+  .info {
+    grid-template-columns: 1fr 80%;
+  }
+}
+
+@media screen and ( max-width: 400px ) {
+  .info {
+    grid-template-columns: 1fr 85%;
   }
 }

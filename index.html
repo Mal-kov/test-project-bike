@@ -20,21 +20,35 @@
           <li><a class="page__link header__dectop-item page__theme-bold" href="#trainer">Тренировки</a></li>
         </ul>
 
-        <ul class="page__list header__menu-mobile">
+
+        <button type="button" class="header__mobile-close-btn"></button>
+        <ul class="page__list header__menu-mobile" id="headerMenuMobile">
           <li><a class="header__mobile-item page__theme-bold" href="#road">Покрытия и градиенты</a></li>
           <li><a class="header__mobile-item page__theme-bold" href="#bikes">Велосипеды</a></li>
           <li><a class="header__mobile-item page__theme-bold" href="#trainer">Тренировки</a></li>
         </ul>
+
+        <div class="header__swicher">
+          <img src="./images/footer__sun.svg" alt="светлая тема">
+          <label class="header__switch">
+            <input class="header__btn" type="checkbox">
+            <span class="header__btn-slider"></span>
+          </label>
+          <img src="./images/footer__moon.svg" alt="темная тема">
+        </div>
+
       </nav>
+      <button type="button" class="header__humb">
+        <span class="header__humb-line"></span>
+        <span class="header__humb-line"></span>
+        <span class="header__humb-line"></span>
+      </button>
     </header>
 
     <main>
 
       <!-- начало секции общего описания -->
       <section class="page__section info">
-
-
-
         <h1 class="info__title page__theme-bold">Шоссе, ТТ и Грэвел</h1>
 
         <div class="info__advertising">
@@ -50,35 +64,6 @@
         </p>
         <a class="info__btn" href="#">Подробнее</a>
         <p class="info__bike-advert">Cannondale Systemsix</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <div class="info__text-block">
-          <h1 class="info__title">Шоссе, ТТ и Грэвел</h1>
-          <p class="info__decription">
-            Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.
-          </p>
-          <a class="info__btn" href="#">Подробнее</a>
-          <p class="info__bike-advert">Cannondale Systemsix</p>
-        </div>
-        <div class="info__advertising">
-          <img class="info__advertising-img" src="./images/info-adirtising.png" alt="Одно из лучших предложений">
-        </div>
-
-        <div class="info__image-block">
-          <img class="info__main-img" src="./images/info-img.jpg" alt="Мы катаемся везде">
-        </div> -->
       </section><!-- конец секции info -->
 
       <!-- начало секции с цитатой -->

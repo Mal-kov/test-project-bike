@@ -1,0 +1,20 @@
+.header__humb {
+  display: none;
+}
+
+
+@media screen and ( max-width: 900px ) {
+  .header__humb {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    width: 22px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    z-index: 30;
+  }
+}

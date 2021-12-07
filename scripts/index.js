@@ -108,6 +108,7 @@ const swiperBikesMobileSlider = new Swiper(".bikes__mobile-slider", {
 //footer
 const mainTheme = document.querySelector('#page');
 const footerBtnTheme = document.querySelector('.footer__btn');
+const headerBtnTheme = document.querySelector('.header__btn');
 const colorFooter = document.querySelector('.footer');
 const switchColorLiteElement = document.getElementsByClassName('page__theme-lite');
 const switchColorBoldElement = document.getElementsByClassName('page__theme-bold');
@@ -115,26 +116,42 @@ const switchColorActiveTabDesc = document.querySelector('.bikes__nav-tab_active'
 const switchColorTabDesc = document.querySelector('.bikes__nav-tab');
 const switchColorTabMobile = document.querySelector('.bikes__mobile-nav-tab');
 const switchColorShevron = document.getElementsByClassName('road__swiper-button');
+const btnHumb = document.querySelector('.header__humb');
+const headerMenuMobile = document.querySelector('#headerMenuMobile');
+const headerMenuMobileClose = document.querySelector('.header__mobile-close-btn');
+const headerSwitcher = document.querySelector('.header__swicher');
 
-
-footerBtnTheme.addEventListener('click', () => {
+function changeTheme() {
   mainTheme.classList.toggle('page__dark-theme');
   colorFooter.classList.toggle('footer__dark-theme');
   switchColorActiveTabDesc.classList.toggle('page__dark-theme_bold');
   switchColorTabDesc.classList.toggle('page__dark-theme_lite');
-  // switchColorShevron.setAttribute('background-color', );
-  // switchColorLiteElement.classList.toggle('page__dark-theme_lite');
   changeColor(switchColorShevron, '#434343');
   changeColor(switchColorLiteElement);
   changeColor(switchColorBoldElement);
-
   switchColorBoldElement.classList.toggle('page__dark-theme_bold');
-});
+}
 
 function changeColor(element, prop='page__dark-theme_lite') {
   for (let i = 0; i < element.length; i++) {
     element[i].classList.toggle(prop);
   }
-
 }
 
+function switchToMobileMenu() {
+  // console.log('КАРАУЛ');
+  headerMenuMobile.classList.add('header__menu-mobile_active');
+  headerMenuMobileClose.classList.add('header__mobile-close-btn_active');
+  headerSwitcher.classList.add('header__swicher_active');
+}
+
+function hideMobileMenu() {
+  headerMenuMobile.classList.remove('header__menu-mobile_active');
+  headerMenuMobileClose.classList.remove('header__mobile-close-btn_active');
+  headerSwitcher.classList.remove('header__swicher_active');
+}
+
+headerBtnTheme.addEventListener('click', changeTheme);
+footerBtnTheme.addEventListener('click', changeTheme);
+btnHumb.addEventListener('click', switchToMobileMenu);
+headerMenuMobileClose.addEventListener('click', hideMobileMenu);

@@ -8,3 +8,9 @@
   font-size: 13px;
   line-height: 28px;
 }
+
+@media screen and ( max-width: 500px ) {
+  .footer__email {
+    width: 90%;
+  }
+}

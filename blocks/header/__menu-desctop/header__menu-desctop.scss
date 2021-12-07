@@ -3,3 +3,9 @@
   justify-content: end;
   padding: 27px 121px;
 }
+
+@media screen and ( max-width: 900px ) {
+  .header__menu-desctop {
+    display: none;
+  }
+}

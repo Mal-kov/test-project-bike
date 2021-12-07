@@ -19,9 +19,17 @@
 @import "../blocks/header/__menu-desctop/header__menu-desctop.scss";
 @import "../blocks/header/__dectop-item/header__dectop-item.scss";
 @import "../blocks/header/__menu-mobile/header__menu-mobile.scss";
+@import "../blocks/header/__menu-mobile/header__menu-mobile_active.scss";
 @import "../blocks/header/__mobile-item/header__mobile-item.scss";
-
-
+@import "../blocks/header/__humb/header__humb.scss";
+@import "../blocks/header/__humb-line/header__humb-line.scss";
+@import "../blocks/header/__mobile-close-btn/header__mobile-close-btn.scss";
+@import "../blocks/header/__mobile-close-btn/header__mobile-close-btn_active.scss";
+@import "../blocks/header/__swicher/header__swicher.scss";
+@import "../blocks/header/__switch/header__switch.scss";
+@import "../blocks/header/__swicher/header__swicher_active.scss";
+@import "../blocks/header/__btn/header__btn.scss";
+@import "../blocks/header/__btn-slider/header__btn-slider.scss";
 
 // info
 @import "../blocks/info/info.scss";
@@ -31,14 +39,9 @@
 @import "../blocks/info/__btn/info__btn.scss";
 @import "../blocks/info/__bike-advert/info__bike-advert.scss";
 @import "../blocks/info/__image-block/info__image-block.scss";
-
-
 @import "../blocks/info/__main-img/info__main-img.scss";
 @import "../blocks/info/__advertising/info__advertising.scss";
 @import "../blocks/info/__advertising-img/info__advertising-img.scss";
-
-
-
 
 // quote
 @import "../blocks/quote/quote.scss";
@@ -65,8 +68,6 @@
 @import "../blocks/road/__swiper-button-next/road__swiper-button-next.scss";
 @import "../blocks/road/__swiper-button-prev/road__swiper-button-prev.scss";
 
-
-
 // bikes
 @import "../blocks/bikes/bikes.scss";
 @import "../blocks/bikes/__title/bikes__title.scss";
@@ -75,7 +76,6 @@
 @import "../blocks/bikes/__mobile-slider/bikes__mobile-slider.scss";
 @import "../blocks/bikes/__mobile-tab-pane/bikes__mobile-tab-pane.scss";
 @import "../blocks/bikes/__mobile-tab-pane/bikes__mobile-tab-pane_active.scss";
-
 @import "../blocks/bikes/__nav-tabs/bikes__nav-tabs.scss";
 @import "../blocks/bikes/__nav-tab/bikes__nav-tab.scss";
 @import "../blocks/bikes/__nav-tab/bikes__nav-tab_active.scss";
@@ -88,7 +88,6 @@
 @import "../blocks/bikes/__item-img/bikes__item-img.scss";
 @import "../blocks/bikes/__item-name/bikes__item-name.scss";
 
-
 // trainer
 @import "../blocks/trainer/trainer.scss";
 @import "../blocks/trainer/__image/trainer__image.scss";
@@ -96,8 +95,6 @@
 @import "../blocks/trainer/__description/trainer__description.scss";
 @import "../blocks/trainer/__links/trainer__links.scss";
 @import "../blocks/trainer/__link/trainer__link.scss";
-
-
 
 // footer
 @import "../blocks/footer/footer.scss";
@@ -111,5 +108,3 @@
 @import "../blocks/footer/__switch/footer__switch.scss";
 @import "../blocks/footer/__btn-slider/footer__btn-slider.scss";
 @import "../blocks/footer/__btn/footer__btn.scss";
-
-
