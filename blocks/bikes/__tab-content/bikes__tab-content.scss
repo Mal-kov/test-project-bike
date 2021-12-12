@@ -1,0 +1,9 @@
+.bikes__tab-content {
+  margin-top: 117px;
+}
+
+@media screen and ( max-width: 900px ) {
+  .bikes__tab-content {
+    display: none;
+  }
+}

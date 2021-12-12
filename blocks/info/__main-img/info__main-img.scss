@@ -1,0 +1,10 @@
+.info__main-img {
+  display: block;
+}
+
+@media screen and ( max-width: 800px ) {
+  .info__main-img {
+    display: block;
+    width: 100%;
+  }
+}

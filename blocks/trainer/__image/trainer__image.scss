@@ -1,0 +1,16 @@
+.trainer__image {
+  grid-area: trainerImg;
+}
+
+@media screen and ( max-width: 1300px ) {
+  .trainer__image {
+    max-width: 100%;
+  }
+}
+
+@media screen and ( max-width: 900px ) {
+  .trainer__image {
+    width: 100%;
+    padding-top: 40px;
+  }
+}

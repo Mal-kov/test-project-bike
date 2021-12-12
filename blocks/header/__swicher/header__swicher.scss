@@ -1,0 +1,12 @@
+.header__swicher {
+  position: fixed;
+  left: 50%;
+  top: 70vh;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  width: 138px;
+  align-items: center;
+  transform: translateX(-50%);
+  opacity: 0;
+}

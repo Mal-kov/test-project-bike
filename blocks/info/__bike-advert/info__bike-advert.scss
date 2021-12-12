@@ -1,0 +1,27 @@
+.info__bike-advert {
+  grid-area: infoBike;
+  position: relative;
+  padding: 0;
+  margin: -16px 0 0 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+
+  &::after{
+    content: '';
+    position: absolute;
+    right: 64px;
+    top: 8px;
+    width: 132px;
+    height: 2px;
+    margin-left: 50px;
+    background-color: rgba(215, 212, 212, 1);
+  }
+}
+
+@media screen and ( max-width: 900px ) {
+  .info__bike-advert {
+    display: none;
+
+  }
+}

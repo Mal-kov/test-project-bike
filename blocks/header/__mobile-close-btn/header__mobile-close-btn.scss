@@ -1,0 +1,17 @@
+.header__mobile-close-btn {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url('../../images/btn-close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  padding: 0;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background-color: transparent;
+  opacity: 0;
+  z-index: 0;
+}
+

@@ -1,0 +1,35 @@
+.trainer {
+  padding: 155px 120px 120px;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: repeat(3, max-content);
+  grid-template-areas:
+  "trainerTitle trainerImg"
+  "trainerDesc trainerImg"
+  "trainerLinks trainerImg";
+}
+
+@media screen and ( max-width: 1025px ) {
+  .trainer {
+    padding: 60px 60px 100px;
+  }
+}
+
+@media screen and ( max-width: 900px ) {
+  .trainer {
+    padding: 40px 30px 60px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas:
+    "trainerTitle"
+    "trainerImg"
+    "trainerDesc"
+    "trainerLinks";
+  }
+}
+
+@media screen and ( max-width: 600px ) {
+  .trainer {
+    padding: 20px 18px 60px;
+  }
+}

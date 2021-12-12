@@ -1,0 +1,23 @@
+.bikes__item-img {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+@media screen and ( max-width: 1300px ) {
+  .bikes__item-img {
+    max-width: 85%;
+  }
+}
+@media screen and ( max-width: 900px ) {
+  .bikes__item-img {
+
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+
+

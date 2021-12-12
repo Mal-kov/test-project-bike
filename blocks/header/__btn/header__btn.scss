@@ -1,0 +1,14 @@
+.header__btn {
+  display: none;
+
+  &:checked + .header__btn-slider{
+
+    background-color: #545454;
+  }
+  &:checked + .header__btn-slider:before{
+    // -webkit-transform: translateX(24px);
+    // -ms-transform: translateX(24px);
+    transform: translateX(20px);
+
+  }
+}

@@ -1,0 +1,12 @@
+
+@media screen and ( max-width: 1025px ) {
+  .quote__image {
+    max-width: 50%;
+  }
+}
+
+@media screen and ( max-width: 900px ) {
+  .quote__image {
+    max-width: 100%;
+  }
+}

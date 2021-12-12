@@ -1,0 +1,17 @@
+.road__title {
+  grid-area: roadTitle;
+  margin: 0;
+  padding: 0;
+  max-width: 320px;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and ( max-width: 600px ) {
+  .road__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
