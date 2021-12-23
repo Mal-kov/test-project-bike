@@ -14,5 +14,9 @@
     line-height: 40px;
   }
 }
-
-
+@media screen and ( max-width: 420px ) {
+  .bikes__title {
+    margin-top: 19px;
+    letter-spacing: -0.8px;
+  }
+}

@@ -10,5 +10,10 @@
     padding: 20px;
   }
 }
+@media screen and ( max-width: 420px ) {
+  .bikes__figure {
+    padding: 0;
+  }
+}
 
 

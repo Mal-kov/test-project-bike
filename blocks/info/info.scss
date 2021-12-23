@@ -42,6 +42,9 @@
 
 @media screen and ( max-width: 400px ) {
   .info {
-    grid-template-columns: 1fr 85%;
+    grid-template-columns: 1fr 89%;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 78px;
   }
 }

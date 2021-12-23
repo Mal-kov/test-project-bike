@@ -15,3 +15,10 @@
     line-height: 18px;
   }
 }
+
+@media screen and ( max-width: 360px ) {
+  .road__description {
+    margin-top: 17px;
+    max-width: 290px;
+  }
+}
