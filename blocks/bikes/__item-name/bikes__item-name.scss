@@ -1,0 +1,25 @@
+.bikes__item-name {
+  padding: 19px 0 0 8px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media screen and ( max-width: 900px ) {
+  .bikes__item-name {
+    text-align: center;
+  }
+}
+@media screen and ( max-width: 700px ) {
+  .bikes__item-name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media screen and ( max-width: 420px ) {
+  .bikes__item-name {
+    padding-top: 6px;
+    padding-bottom: 17px;
+  }
+}

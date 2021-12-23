@@ -1,0 +1,22 @@
+.trainer__description {
+  grid-area: trainerDesc;
+  padding: 0;
+  margin: 43px 0 0 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+  max-width: 460px;
+}
+
+@media screen and ( max-width: 700px ) {
+  .trainer__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and ( max-width: 420px ) {
+  .trainer__description {
+    margin-top: 39px;
+  }
+}

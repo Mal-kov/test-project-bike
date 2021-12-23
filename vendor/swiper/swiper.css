@@ -1,0 +1,11 @@
+.swiper {
+  display: block;
+}/*# sourceMappingURL=swiper.css.map */
+.swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+
+}
+.swiper-pagination-bullet-active {
+  background: rgba(21, 21, 21, 1);
+}

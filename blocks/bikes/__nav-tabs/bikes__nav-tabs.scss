@@ -1,0 +1,13 @@
+.bikes__nav-tabs {
+  position: absolute;
+  right: 101px;
+  top: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and ( max-width: 900px ) {
+  .bikes__nav-tabs {
+    display: none;
+  }
+}

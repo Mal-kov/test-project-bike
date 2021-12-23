@@ -1,0 +1,23 @@
+.info__decription {
+  grid-area: infoDesc;
+  padding: 0;
+  margin: 19px 0 0 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 420px;
+  opacity: 0.7;
+}
+
+@media screen and ( max-width: 600px ) {
+  .info__decription {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media screen and ( max-width: 420px ) {
+  .info__decription {
+    margin-top: 41px;
+  }
+}

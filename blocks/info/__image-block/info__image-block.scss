@@ -1,0 +1,10 @@
+.info__image-block {
+  grid-area: infoImage;
+  position: relative;
+}
+
+@media screen and ( max-width: 1025px ) {
+  .info__image-block {
+    overflow: hidden;
+  }
+}

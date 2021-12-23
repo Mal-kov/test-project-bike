@@ -1,0 +1,23 @@
+.trainer__links {
+  grid-area: trainerLinks;
+  display: flex;
+  margin-top: 182px;
+}
+
+@media screen and ( max-width: 1300px ) {
+  .trainer__links {
+    margin-top: 130px;
+  }
+}
+
+@media screen and ( max-width: 1025px ) {
+  .trainer__links {
+    margin-top: 80px;
+  }
+}
+
+@media screen and ( max-width: 600px ) {
+  .trainer__links {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,27 @@
+.header__humb {
+  display: none;
+}
+
+
+@media screen and ( max-width: 900px ) {
+  .header__humb {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    width: 22px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    z-index: 30;
+  }
+}
+
+@media screen and ( max-width: 420px ) {
+  .header__humb {
+    right: 18px;
+    top: 26px;
+  }
+}

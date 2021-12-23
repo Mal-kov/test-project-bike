@@ -1,0 +1,13 @@
+.road__swiper-button_next {
+
+  background-image: url('../images/shevron_left.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+@media screen and ( max-width: 700px ) {
+  .road__swiper-button_next {
+    background-image: url('../images/shevron_mobile_left.svg');
+  }
+}

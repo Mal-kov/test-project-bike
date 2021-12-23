@@ -1,0 +1,15 @@
+.footer__form-btn {
+  border: none;
+  position: absolute;
+  left: 300px;
+  bottom: 13px;
+  padding: 5px 15px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+@media screen and ( max-width: 420px ) {
+  .footer__form-btn {
+    left: 80%;
+  }
+}

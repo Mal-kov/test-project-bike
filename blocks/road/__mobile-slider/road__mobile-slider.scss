@@ -1,0 +1,21 @@
+.road__mobile-slider {
+  grid-area: roadMobile;
+  display: none;
+}
+
+@media screen and ( max-width: 900px ) {
+  .road__mobile-slider {
+    display: block;
+    position: relative;
+    margin: 40px auto 0;
+    max-width: 90vw;
+    height: fit-content;
+    z-index: 30;
+  }
+}
+
+@media screen and ( max-width: 780px ) {
+  .road__mobile-slider {
+    max-width: 100vw;
+  }
+}

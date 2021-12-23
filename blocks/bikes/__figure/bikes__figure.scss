@@ -1,0 +1,19 @@
+.bikes__figure {
+  margin: 0;
+}
+
+@media screen and ( max-width: 900px ) {
+  .bikes__figure {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+  }
+}
+@media screen and ( max-width: 420px ) {
+  .bikes__figure {
+    padding: 0;
+  }
+}
+
+
