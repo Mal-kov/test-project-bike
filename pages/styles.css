@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import "../vendor/fonts.css";
 @import "../vendor/swiper/swiper.css";
 html {
   line-height: 1.15;
@@ -339,24 +340,6 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-weight: 500;
-  font-display: swap;
-  src: url(./fonts/Inter-Regular.woff2) format("woff2"), url(./fonts/Inter-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: "Inter";
-  font-weight: 700;
-  font-display: swap;
-  src: url(./fonts/Inter-Bold.woff2) format("woff2"), url(./fonts/Inter-Bold.woff) format("woff");
-}
-@font-face {
-  font-family: "Inter";
-  font-weight: 900;
-  font-display: swap;
-  src: url(./fonts/Inter-Black.woff2) format("woff2"), url(./fonts/Inter-Black.woff) format("woff");
-}
 .page {
   background-color: #f4f4f4;
   margin: 0;
@@ -384,24 +367,24 @@ template {
   opacity: 0.7;
 }
 
-.page__theme-lite {
+.page__section_theme-lite {
   color: #222222;
 }
 
-.page__theme-bold {
+.page__section_theme-bold {
   color: #151515;
 }
 
-.page__dark-theme {
+.page__section_dark-theme {
   background-color: #333333;
   color: #fff;
 }
 
-.page__dark-theme_lite {
+.page__section_dark-theme_lite {
   color: #E5E5E5;
 }
 
-.page__dark-theme_bold {
+.page__section_dark-theme_bold {
   color: #fff;
 }
 
@@ -480,6 +463,12 @@ template {
     z-index: 30;
   }
 }
+@media screen and (max-width: 420px) {
+  .header__humb {
+    right: 18px;
+    top: 26px;
+  }
+}
 .header__humb-line {
   display: block;
   background-color: #151515;
@@ -493,7 +482,7 @@ template {
   display: block;
   width: 35px;
   height: 35px;
-  background-image: url("../../images/btn-close.svg");
+  background-image: url("../images/btn-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 0;
@@ -605,7 +594,10 @@ template {
 }
 @media screen and (max-width: 400px) {
   .info {
-    grid-template-columns: 1fr 85%;
+    grid-template-columns: 1fr 89%;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 78px;
   }
 }
 .info__text-block {
@@ -630,6 +622,12 @@ template {
     line-height: 40px;
   }
 }
+@media screen and (max-width: 420px) {
+  .info__title {
+    margin-top: 93px;
+    margin-bottom: 40px;
+  }
+}
 .info__decription {
   grid-area: infoDesc;
   padding: 0;
@@ -647,11 +645,17 @@ template {
     line-height: 18px;
   }
 }
+@media screen and (max-width: 420px) {
+  .info__decription {
+    margin-top: 41px;
+  }
+}
 .info__btn {
   grid-area: infoBtn;
   padding: 16px 25px;
   margin: -27px 0 0 0;
   color: #fff;
+  background: #24b47e;
   width: 180px;
   height: 50px;
   border-radius: 4px;
@@ -659,23 +663,27 @@ template {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 1px;
-  text-decoration: none;
+  display: block;
   box-sizing: border-box;
   text-align: center;
-  display: block;
-  background: #24b47e;
+  text-decoration: none;
   cursor: pointer;
-  display: block;
   position: relative;
-  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
 }
-.info__btn:hover {
+.info__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 50px;
   color: #fff;
-  background-color: #319e75;
+  background: rgba(49, 158, 117, 0.3);
+  border-radius: 4px;
+  transition: all 2s ease;
 }
-.info__btn:hover::before {
-  left: 0%;
-  right: auto;
+.info__btn:hover::after {
+  color: #fff;
   width: 100%;
 }
 
@@ -683,6 +691,12 @@ template {
   .info__btn {
     margin-top: 10px;
     width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .info__btn {
+    margin-top: 40px;
+    height: 48px;
   }
 }
 .info__bike-advert {
@@ -799,12 +813,7 @@ template {
 }
 @media screen and (max-width: 430px) {
   .info__advertising-img {
-    padding: 14px 40px;
-  }
-}
-@media screen and (max-width: 380px) {
-  .info__advertising-img {
-    padding: 13px 35px;
+    padding: 21px 39px;
   }
 }
 .quote {
@@ -829,6 +838,11 @@ template {
 @media screen and (max-width: 600px) {
   .quote {
     padding: 20px 18px 80px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .quote {
+    padding-top: 21px;
   }
 }
 @media screen and (max-width: 1025px) {
@@ -872,7 +886,7 @@ template {
   font-weight: 600;
   font-size: 34px;
   line-height: 44px;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.6px;
 }
 
 @media screen and (max-width: 900px) {
@@ -881,6 +895,12 @@ template {
   }
 }
 @media screen and (max-width: 600px) {
+  .quote__title {
+    font-size: 23px;
+    line-height: 29px;
+  }
+}
+@media screen and (max-width: 420px) {
   .quote__title {
     font-size: 23px;
     line-height: 29px;
@@ -969,6 +989,12 @@ template {
   .road__description {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .road__description {
+    margin-top: 17px;
+    max-width: 290px;
   }
 }
 .road__main-slider {
@@ -1070,6 +1096,12 @@ template {
     z-index: 30;
   }
 }
+@media screen and (max-width: 700px) {
+  .road__pagination {
+    top: 6px;
+    width: 60px;
+  }
+}
 .road__swiper-button {
   width: 50px;
   height: 50px;
@@ -1081,18 +1113,34 @@ template {
   opacity: 0.6;
 }
 
-.road__swiper-button-next {
+@media screen and (max-width: 700px) {
+  .road__swiper-button {
+    width: 24px;
+    height: 24px;
+  }
+}
+.road__swiper-button_next {
   background-image: url("../images/shevron_left.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.road__swiper-button-prev {
+@media screen and (max-width: 700px) {
+  .road__swiper-button_next {
+    background-image: url("../images/shevron_mobile_left.svg");
+  }
+}
+.road__swiper-button_prev {
   background-image: url("../images/shevron_right.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
+@media screen and (max-width: 700px) {
+  .road__swiper-button_prev {
+    background-image: url("../images/shevron_mobile_right.svg");
+  }
+}
 .bikes {
   padding: 54px 120px;
   position: relative;
@@ -1115,6 +1163,11 @@ template {
     padding: 20px 18px 80px;
   }
 }
+@media screen and (max-width: 420px) {
+  .bikes {
+    padding-bottom: 65px;
+  }
+}
 .bikes__title {
   margin: 73px 0 0 0;
   padding: 0;
@@ -1131,6 +1184,12 @@ template {
     line-height: 40px;
   }
 }
+@media screen and (max-width: 420px) {
+  .bikes__title {
+    margin-top: 19px;
+    letter-spacing: -0.8px;
+  }
+}
 .bikes__mobile-nav-tabs {
   display: none;
 }
@@ -1143,6 +1202,13 @@ template {
     border: 1px solid #E3E3E3;
     border-radius: 2px;
     background-color: #f4f4f4;
+  }
+}
+@media screen and (max-width: 420px) {
+  .bikes__mobile-nav-tabs {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
   }
 }
 .bikes__mobile-tab-content {
@@ -1160,6 +1226,11 @@ template {
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 420px) {
+  .bikes__mobile-slider {
+    padding-bottom: 37px;
+  }
+}
 .bikes__mobile-tab-pane {
   display: none;
 }
@@ -1218,6 +1289,11 @@ template {
     padding: 20px;
   }
 }
+@media screen and (max-width: 420px) {
+  .bikes__figure {
+    padding: 0;
+  }
+}
 .bikes__slider {
   margin-left: 0;
 }
@@ -1252,6 +1328,11 @@ template {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 420px) {
+  .bikes__item-img {
+    padding-bottom: 0;
+  }
+}
 .bikes__item-name {
   padding: 19px 0 0 8px;
   margin: 0;
@@ -1269,6 +1350,12 @@ template {
   .bikes__item-name {
     font-size: 14px;
     line-height: 18px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .bikes__item-name {
+    padding-top: 6px;
+    padding-bottom: 17px;
   }
 }
 .trainer {
@@ -1298,6 +1385,11 @@ template {
 @media screen and (max-width: 600px) {
   .trainer {
     padding: 20px 18px 60px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .trainer {
+    padding-top: 36px;
   }
 }
 .trainer__image {
@@ -1332,6 +1424,11 @@ template {
     line-height: 40px;
   }
 }
+@media screen and (max-width: 700px) {
+  .trainer__title {
+    letter-spacing: -0.8px;
+  }
+}
 .trainer__description {
   grid-area: trainerDesc;
   padding: 0;
@@ -1347,6 +1444,11 @@ template {
   .trainer__description {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .trainer__description {
+    margin-top: 39px;
   }
 }
 .trainer__links {
@@ -1422,6 +1524,36 @@ template {
   max-width: 250px;
 }
 
+@media screen and (max-width: 420px) {
+  .footer__title {
+    letter-spacing: -0.1px;
+    padding-bottom: 41px;
+  }
+}
+.footer__form-email {
+  position: relative;
+  display: block;
+}
+
+.footer__form-btn {
+  border: none;
+  position: absolute;
+  left: 300px;
+  bottom: 13px;
+  padding: 5px 15px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .footer__form-btn {
+    left: 80%;
+  }
+}
+.footer__form-btn_active {
+  opacity: 1;
+}
+
 .footer__copyright {
   display: flex;
   justify-content: space-between;
@@ -1437,11 +1569,24 @@ template {
   font-weight: 500;
   font-size: 13px;
   line-height: 28px;
+  cursor: pointer;
+}
+.footer__email:hover::-moz-placeholder {
+  color: #151515;
+}
+.footer__email:hover:-ms-input-placeholder {
+  color: #151515;
+}
+.footer__email:hover::placeholder {
+  color: #151515;
+}
+.footer__email:focus-visible {
+  outline: rgba(199, 199, 199, 0.5) 1px;
 }
 
 @media screen and (max-width: 500px) {
   .footer__email {
-    width: 90%;
+    width: 92%;
   }
 }
 .footer__copyright-text {
@@ -1453,6 +1598,11 @@ template {
   color: #CFCFCF;
 }
 
+@media screen and (max-width: 420px) {
+  .footer__copyright-text {
+    padding-top: 14px;
+  }
+}
 .footer__swicher {
   display: flex;
   justify-content: space-between;
@@ -1460,6 +1610,11 @@ template {
   align-items: center;
 }
 
+@media screen and (max-width: 780px) {
+  .footer__swicher {
+    display: none;
+  }
+}
 .footer__switch {
   position: relative;
   display: inline-block;

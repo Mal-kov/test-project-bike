@@ -1,5 +1,5 @@
 @import "../vendor/normalize";
-@import "../vendor/fonts";
+@import "../vendor/fonts.css";
 @import "../blocks/variables.scss";
 @import "../vendor/swiper/swiper.css";
 
@@ -8,11 +8,11 @@
 @import "../blocks/page/__list/page__list.scss";
 @import "../blocks/page/__section/page__section.scss";
 @import "../blocks/page/__link/page__link.scss";
-@import "../blocks/page/page__theme-lite.scss";
-@import "../blocks/page/page__theme-bold.scss";
-@import "../blocks/page/page__dark-theme.scss";
-@import "../blocks/page/page__dark-theme_lite.scss";
-@import "../blocks/page/page__dark-theme_bold.scss";
+@import "../blocks/page/page__section_theme-lite.scss";
+@import "../blocks/page/page__section_theme-bold.scss";
+@import "../blocks/page/page__section_dark-theme.scss";
+@import "../blocks/page/page__section_dark-theme_lite.scss";
+@import "../blocks/page/page__section_dark-theme_bold.scss";
 
 // header
 @import "../blocks/header/header.scss";
@@ -65,8 +65,8 @@
 @import "../blocks/road/__tt-logo/road__tt-logo.scss";
 @import "../blocks/road/__pagination/road__pagination.scss";
 @import "../blocks/road/__swiper-button/road__swiper-button.scss";
-@import "../blocks/road/__swiper-button-next/road__swiper-button-next.scss";
-@import "../blocks/road/__swiper-button-prev/road__swiper-button-prev.scss";
+@import "../blocks/road/__swiper-button/road__swiper-button_next.scss";
+@import "../blocks/road/__swiper-button/road__swiper-button_prev.scss";
 
 // bikes
 @import "../blocks/bikes/bikes.scss";
@@ -101,6 +101,9 @@
 @import "../blocks/footer/footer__dark-theme.scss";
 @import "../blocks/footer/__wrap/footer__wrap.scss";
 @import "../blocks/footer/__title/footer__title.scss";
+@import "../blocks/footer/__form-email/footer__form-email.scss";
+@import "../blocks/footer/__form-btn/footer__form-btn.scss";
+@import "../blocks/footer/__form-btn/footer__form-btn_active.scss";
 @import "../blocks/footer/__copyright/footer__copyright.scss";
 @import "../blocks/footer/__email/footer__email.scss";
 @import "../blocks/footer/__copyright-text/footer__copyright-text.scss";

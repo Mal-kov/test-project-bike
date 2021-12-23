@@ -6,3 +6,9 @@
   line-height: 20px;
   color: #CFCFCF;
 }
+
+@media screen and ( max-width: 420px ) {
+  .footer__copyright-text {
+    padding-top: 14px;
+  }
+}

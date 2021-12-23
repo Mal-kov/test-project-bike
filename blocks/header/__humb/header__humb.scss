@@ -18,3 +18,10 @@
     z-index: 30;
   }
 }
+
+@media screen and ( max-width: 420px ) {
+  .header__humb {
+    right: 18px;
+    top: 26px;
+  }
+}

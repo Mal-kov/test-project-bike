@@ -4,3 +4,9 @@
   width: 138px;
   align-items: center;
 }
+
+@media screen and ( max-width: 780px ) {
+  .footer__swicher {
+    display: none;
+  }
+}

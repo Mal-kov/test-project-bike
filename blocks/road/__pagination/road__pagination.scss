@@ -15,3 +15,10 @@
     z-index: 30;
   }
 }
+
+@media screen and ( max-width: 700px ) {
+  .road__pagination {
+    top: 6px;
+    width: 60px;
+  }
+}
